@@ -114,19 +114,29 @@ function getModalContent(section) {
             <h2>Hobbies de Andrea</h2>
             <div class="modal-grid">
                 <div class="hobby-item">
-                    <i class="fas fa-book"></i>
-                    <h4>Leer</h4>
-                    <p>Disfruta de la literatura romántica y de autoayuda</p>
+                    <i class="fas fa-heart"></i>
+                    <h4>Bailar marinera norteña</h4>
+                    <p>Disfruta de bailar desde los 17 años, que comenzó por su familia, que la incentivó a meterse en esto que la terminó metiendo a una academia para enseñar, participó en innumerables concursos de marinera, donde quedó primer puestos en múltiples ocasiones. Terminó destacando en esta danza y es muy conocida por todo su entorno por esta atractiva habilidad.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Pasar tiempo con amigos</h4>
+                    <p>Le gusta socializar con un entorno que le parezca seguro o que ella vea conveniente, a veces se acerca con mucha confianza para probar si la gente es capaz de adentrarse a una conversación con un tono sarcástico de confianza y termina haciendo amigos muy fácil por esta forma de ser tan particular, que hasta muchos de sus amigos cercanos la tildaron de "autista", pero así como se muestra al mundo se ha hecho querer bastante.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-running"></i>
+                    <h4>Atletismo</h4>
+                    <p>Este es un nuevo hobbie que ha adquirido por juntarse con muchos de sus amigos que le incentivaron al deporte, primero Alexander y Wilder, luego conoció a alguien que destacaba bastante en este deporte, por su alta resistencia y velocidad, ese es Gael, quien le terminó por acompañar en este camino a la mejora, no solo la disciplina del atletismo...</p>
                 </div>
                 <div class="hobby-item">
                     <i class="fas fa-music"></i>
-                    <h4>Música</h4>
-                    <p>Apasionada por descubrir nueva música y crear playlists</p>
+                    <h4>Cantar</h4>
+                    <p>Sinceramente, un hobbie no significa que lo hagas muy bien; pero le gusta, tanto a ella como a muchos de sus amigos, que también cantan mal. Lo importante es la intención y cómo vives la canción cuando lo haces.</p>
                 </div>
                 <div class="hobby-item">
-                    <i class="fas fa-camera"></i>
-                    <h4>Fotografía</h4>
-                    <p>Capturando momentos especiales con su cámara</p>
+                    <i class="fas fa-gamepad"></i>
+                    <h4>Billar</h4>
+                    <p>Aunque no sea muy buena en el real, en el virtual ha ganado cientos de veces a Gael, que es un profesional tanto en el billar en la vida real, como en el ocho bola, pero puede que parte de sus derrotas sea porque se dejó por simp, ya que siempre usaban este juego para charlar, en llamada o matar el tiempo en un curso aburrido o momento muy equisde.</p>
                 </div>
             </div>
         `,
@@ -137,57 +147,202 @@ function getModalContent(section) {
                 <div class="foda-item fortalezas">
                     <h3>Fortalezas</h3>
                     <ul>
-                        <li>Empatía y comprensión hacia los demás</li>
-                        <li>Creatividad en la resolución de problemas</li>
-                        <li>Perseverancia en sus objetivos</li>
-                        <li>Capacidad de adaptación</li>
+                        <li>Creatividad artística</li>
+                        <li>Se sabe mover (7.5/10) ;)</li>
+                        <li>Determinación cuando se lo propone en serio</li>
                     </ul>
                 </div>
                 <div class="foda-item oportunidades">
                     <h3>Oportunidades</h3>
                     <ul>
-                        <li>Desarrollo profesional en su campo</li>
-                        <li>Crecimiento personal continuo</li>
-                        <li>Expansión de su círculo social</li>
-                        <li>Nuevos hobbies y habilidades</li>
+                        <li>Crecimiento personal continuo en base a experiencias</li>
+                        <li>Expansión de círculo social</li>
                     </ul>
                 </div>
                 <div class="foda-item debilidades">
                     <h3>Debilidades</h3>
                     <ul>
-                        <li>Perfeccionismo excesivo en ocasiones</li>
-                        <li>Sensibilidad emocional elevada</li>
-                        <li>Dificultad para decir no</li>
+                        <li>Sobrepensar</li>
+                        <li>Potencial narcicista (está mejorando eso, pero podría seguir siendo una debilidad y ya no una amenaza)</li>
+                        <li>Sensible</li>
+                        <li>Poca organización (especialmente en su cuarto)</li>
                     </ul>
                 </div>
                 <div class="foda-item amenazas">
                     <h3>Amenazas</h3>
                     <ul>
+                        <li>Actuar por despecho (impulsividad en las emociones y no saber canalizarlas correctamente)</li>
                         <li>Estrés por altas expectativas</li>
-                        <li>Incertidumbre en algunos aspectos</li>
                     </ul>
                 </div>
             </div>
         `,
         
+        'andrea-psicologico': `
+            <h2>Aspecto Psicológico - Andrea</h2>
+            <div class="psychological-content">
+                <p>Es una persona sensible, un poco impulsiva con sus emociones, quiere sentir emoción al socializar, dependiendo del ambiente. Resuelve los problemas de una manera de imitación y presenta ecolalias en cuanto a su manera de reaccionar (imita a sus referentes).</p>
+            </div>
+        `,
+
+        // Añadir contenido para las demás secciones de Andrea
         'andrea-hexagono': `
             <h2>Hexágono de Habilidades - Andrea</h2>
             <div class="hexagon-container">
-                <img src="images/hexagono-andrea.jpg" alt="Hexágono de habilidades de Andrea" style="width: 100%; border-radius: 10px;">
-                <div class="skills-list">
-                    <h3>Habilidades Principales</h3>
+                <div class="skills-chart">
+                    <div class="skill" data-skill="Bailar" data-level="90">Bailar: 90%</div>
+                    <div class="skill" data-skill="Socializar" data-level="85">Socializar: 85%</div>
+                    <div class="skill" data-skill="Creatividad" data-level="80">Creatividad: 80%</div>
+                    <div class="skill" data-skill="Resistencia" data-level="75">Resistencia: 75%</div>
+                    <div class="skill" data-skill="Determinación" data-level="70">Determinación: 70%</div>
+                    <div class="skill" data-skill="Organización" data-level="60">Organización: 60%</div>
+                </div>
+            </div>
+        `,
+
+        'andrea-estudios': `
+            <h2>Estudios - Andrea</h2>
+            <div class="studies-content">
+                <p>Información sobre la formación académica y estudios de Andrea...</p>
+            </div>
+        `,
+
+        'andrea-gustos': `
+            <h2>Gustos - Andrea</h2>
+            <div class="likes-content">
+                <p>Sus preferencias, pasiones y cosas que disfruta...</p>
+            </div>
+        `,
+
+        'andrea-historial': `
+            <h2>Historial de Amor - Andrea</h2>
+            <div class="love-history">
+                <p>Su journey en el amor y relaciones anteriores...</p>
+            </div>
+        `,
+
+        'andrea-deporte': `
+            <h2>Deporte - Andrea</h2>
+            <div class="sports-content">
+                <p>Su experiencia en atletismo y otros deportes...</p>
+            </div>
+        `,
+
+        'andrea-familia': `
+            <h2>Familia - Andrea</h2>
+            <div class="family-content">
+                <p>Información sobre su núcleo familiar...</p>
+            </div>
+        `,
+
+        'andrea-circulo': `
+            <h2>Círculo Social - Andrea</h2>
+            <div class="social-content">
+                <p>Sus amistades y relaciones sociales...</p>
+            </div>
+        `,
+
+        'andrea-pienso': `
+            <h2>Lo que pienso de ti - Andrea</h2>
+            <div class="thoughts-content">
+                <p>Reflexiones y sentimientos sobre Andrea...</p>
+            </div>
+        `,
+
+        // SECCIONES PARA GAEL (mismas que Andrea)
+        'gael-hobbies': `
+            <h2>Hobbies de Gael</h2>
+            <div class="modal-grid">
+                <div class="hobby-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>Atletismo y Deporte</h4>
+                    <p>Gael destaca por su alta resistencia y velocidad en atletismo. Es una de sus mayores pasiones y habilidades.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h4>Videojuegos</h4>
+                    <p>Disfruta de los videojuegos, especialmente aquellos que requieren estrategia y habilidad.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-billiard"></i>
+                    <h4>Billar</h4>
+                    <p>Es un profesional tanto en el billar en la vida real como en el ocho bola virtual.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-music"></i>
+                    <h4>Música</h4>
+                    <p>Apasionado por la música, crea playlists y descubre nuevos artistas constantemente.</p>
+                </div>
+            </div>
+        `,
+
+        'gael-foda': `
+            <h2>Análisis FODA - Gael</h2>
+            <div class="foda-grid">
+                <div class="foda-item fortalezas">
+                    <h3>Fortalezas</h3>
                     <ul>
-                        <li>Comunicación efectiva: 90%</li>
-                        <li>Inteligencia emocional: 85%</li>
-                        <li>Creatividad: 80%</li>
-                        <li>Resiliencia: 75%</li>
-                        <li>Liderazgo: 70%</li>
-                        <li>Organización: 85%</li>
+                        <li>Alta resistencia física y velocidad</li>
+                        <li>Capacidad estratégica en juegos</li>
+                        <li>Lealtad y compromiso</li>
+                    </ul>
+                </div>
+                <div class="foda-item oportunidades">
+                    <h3>Oportunidades</h3>
+                    <ul>
+                        <li>Desarrollo en deportes competitivos</li>
+                        <li>Crecimiento profesional</li>
+                        <li>Expansión de habilidades sociales</li>
+                    </ul>
+                </div>
+                <div class="foda-item debilidades">
+                    <h3>Debilidades</h3>
+                    <ul>
+                        <li>Puede ser muy competitivo</li>
+                        <li>A veces reservado emocionalmente</li>
+                        <li>Perfeccionismo en ciertas áreas</li>
+                    </ul>
+                </div>
+                <div class="foda-item amenazas">
+                    <h3>Amenazas</h3>
+                    <ul>
+                        <li>Lesiones deportivas</li>
+                        <li>Estrés por competencia</li>
                     </ul>
                 </div>
             </div>
         `,
-        
+
+        'gael-psicologico': `
+            <h2>Aspecto Psicológico - Gael</h2>
+            <div class="psychological-content">
+                <p>Gael es una persona con carácter fuerte, estratégico en su pensar y actuar. Tiene profundidad emocional aunque a veces puede ser reservado. Es leal y comprometido con las personas que valora.</p>
+            </div>
+        `,
+
+        'gael-hexagono': `
+            <h2>Hexágono de Habilidades - Gael</h2>
+            <div class="hexagon-container">
+                <div class="skills-chart">
+                    <div class="skill" data-skill="Atletismo" data-level="95">Atletismo: 95%</div>
+                    <div class="skill" data-skill="Estrategia" data-level="85">Estrategia: 85%</div>
+                    <div class="skill" data-skill="Billar" data-level="90">Billar: 90%</div>
+                    <div class="skill" data-skill="Música" data-level="80">Música: 80%</div>
+                    <div class="skill" data-skill="Lealtad" data-level="95">Lealtad: 95%</div>
+                    <div class="skill" data-skill="Compromiso" data-level="90">Compromiso: 90%</div>
+                </div>
+            </div>
+        `,
+
+        // Añadir el resto de secciones para Gael siguiendo el mismo patrón
+        'gael-estudios': `<h2>Estudios - Gael</h2><div class="studies-content"><p>Información académica de Gael...</p></div>`,
+        'gael-gustos': `<h2>Gustos - Gael</h2><div class="likes-content"><p>Preferencias y pasiones de Gael...</p></div>`,
+        'gael-historial': `<h2>Historial de Amor - Gael</h2><div class="love-history"><p>Su journey en el amor...</p></div>`,
+        'gael-deporte': `<h2>Deporte - Gael</h2><div class="sports-content"><p>Su experiencia deportiva...</p></div>`,
+        'gael-familia': `<h2>Familia - Gael</h2><div class="family-content"><p>Su núcleo familiar...</p></div>`,
+        'gael-circulo': `<h2>Círculo Social - Gael</h2><div class="social-content"><p>Sus amistades...</p></div>`,
+        'gael-pienso': `<h2>Lo que pienso de ti - Gael</h2><div class="thoughts-content"><p>Reflexiones sobre Gael...</p></div>`,
+
         'perdon': `
             <h2>¿Por qué deberías perdonarme?</h2>
             <div class="forgiveness-content">

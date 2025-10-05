@@ -1,0 +1,36 @@
+/* Estilos específicos para la sección de Andrea */
+.andrea-section {
+    background: linear-gradient(135deg, #fff5f7, #ffeef2);
+}
+
+.andrea-section .profile-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #ff6b93, #ffafbd, #ffdde1);
+    border-radius: 25px;
+    z-index: -1;
+    animation: gradientShift 3s ease infinite;
+}
+
+.andrea-section .subsection-card {
+    border-left: 4px solid var(--primary-pink);
+}
+
+.andrea-section .subsection-icon {
+    color: var(--primary-pink);
+}
+
+.andrea-section .subsection-card:hover {
+    background: linear-gradient(135deg, var(--white), #fff5f7);
+}
+
+/* Modal content styles for Andrea */
+#andrea-hobbies .modal-content {
+    border-left: 5px solid var(--primary-pink);
+}
+
+/* Add more specific styles for Andrea's sections */

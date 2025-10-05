@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gael & Andrea - Nuestra Historia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/andrea.css">
+    <link rel="stylesheet" href="css/gael.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="heart">💖</span>
+                <span>G&A</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#andrea">Andrea</a></li>
+                <li><a href="#gael">Gael</a></li>
+                <li><a href="#recuerdos">Recuerdos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Gael & Andrea</h1>
+            <p class="hero-subtitle">Nuestra historia a través del tiempo</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="days-together">700+</span>
+                    <span class="stat-label">Días juntos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="memories-count">50+</span>
+                    <span class="stat-label">Recuerdos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="playlists-count">4</span>
+                    <span class="stat-label">Playlists</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección Playlists -->
+    <!-- En la sección Playlists - actualizar los enlaces -->
+<div class="playlists-grid">
+    <div class="playlist-card" data-theme="romantic">
+        <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+        </div>
+        <h3>Quién chucha somos</h3>
+        <p>La esencia de nuestra relación en canciones</p>
+        <a href="https://open.spotify.com/playlist/2HsKj3IojJdvUFmIDJywdm?si=iCWZq3GISASZ-E3LHlCZQQ&pi=46H60MJVQrWw4" class="playlist-btn" target="_blank">
+            <i class="fab fa-spotify"></i> Escuchar
+        </a>
+    </div>
+    
+    <div class="playlist-card" data-theme="melancholic">
+        <div class="playlist-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h3>A short goodbye</h3>
+        <p>Para esos momentos de despedida</p>
+        <a href="https://open.spotify.com/playlist/6Jg4njST5VMMQylaWFDR0K?si=e6a1_i1sSVWCZDdbPATgqg&pi=t_QEdkQWTB2ND" class="playlist-btn" target="_blank">
+            <i class="fab fa-spotify"></i> Escuchar
+        </a>
+    </div>
+    
+    <!-- Mantener los otros dos playlists con los enlaces que tengas -->
+</div>
+
+                
+                <div class="playlist-card" data-theme="energetic">
+                    <div class="playlist-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>La mejor playlist de Gaelo</h3>
+                    <p>Los gustos musicales de Gael</p>
+                    <a href="[ENLACE_SPOTIFY_3]" class="playlist-btn" target="_blank">
+                        <i class="fab fa-spotify"></i> Escuchar
+                    </a>
+                </div>
+                
+                <div class="playlist-card" data-theme="soft">
+                    <div class="playlist-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>La mejor playlist de Andreita</h3>
+                    <p>Las canciones que mueven a Andrea</p>
+                    <a href="[ENLACE_SPOTIFY_4]" class="playlist-btn" target="_blank">
+                        <i class="fab fa-spotify"></i> Escuchar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Andrea -->
+    <section id="andrea" class="profile-section andrea-section">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="images/andrea-profile.jpg" alt="Andrea">
+                    <div class="profile-overlay"></div>
+                </div>
+                <div class="profile-info">
+                    <h2 class="section-title">¿Quién es Andrea?</h2>
+                    <p class="profile-description">
+                        Una persona increíble llena de luz, pasión y determinación. 
+                        Su esencia ilumina cada momento y su corazón es tan grande como sus sueños.
+                    </p>
+                </div>
+            </div>
+
+            <div class="subsections-grid">
+                <!-- Hobbies -->
+                <div class="subsection-card" onclick="openModal('andrea-hobbies')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Hobbies</h3>
+                    <p>Sus pasatiempos y actividades favoritas</p>
+                </div>
+
+                <!-- Análisis FODA -->
+                <div class="subsection-card" onclick="openModal('andrea-foda')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análisis FODA</h3>
+                    <p>Fortalezas, oportunidades, debilidades y amenazas</p>
+                </div>
+
+                <!-- Aspecto psicológico -->
+                <div class="subsection-card" onclick="openModal('andrea-psicologico')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Aspecto psicológico</h3>
+                    <p>Su forma de pensar y sentir</p>
+                </div>
+
+                <!-- Hexágono de habilidades -->
+                <div class="subsection-card" onclick="openModal('andrea-hexagono')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h3>Hexágono de habilidades</h3>
+                    <p>Sus competencias y capacidades</p>
+                </div>
+
+                <!-- Estudios -->
+                <div class="subsection-card" onclick="openModal('andrea-estudios')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Estudios</h3>
+                    <p>Su formación académica</p>
+                </div>
+
+                <!-- Gustos -->
+                <div class="subsection-card" onclick="openModal('andrea-gustos')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Gustos</h3>
+                    <p>Sus preferencias y pasiones</p>
+                </div>
+
+                <!-- Historial de amor -->
+                <div class="subsection-card" onclick="openModal('andrea-historial')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Historial de amor</h3>
+                    <p>Su journey en el amor</p>
+                </div>
+
+                <!-- Deporte -->
+                <div class="subsection-card" onclick="openModal('andrea-deporte')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Deporte</h3>
+                    <p>Actividad física y deportiva</p>
+                </div>
+
+                <!-- Familia -->
+                <div class="subsection-card" onclick="openModal('andrea-familia')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Familia</h3>
+                    <p>Su núcleo familiar</p>
+                </div>
+
+                <!-- Círculo social -->
+                <div class="subsection-card" onclick="openModal('andrea-circulo')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Círculo social</h3>
+                    <p>Sus amistades y relaciones</p>
+                </div>
+
+                <!-- Lo que pienso de ti -->
+                <div class="subsection-card" onclick="openModal('andrea-pienso')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-comment-heart"></i>
+                    </div>
+                    <h3>Lo que pienso de ti</h3>
+                    <p>Reflexiones y sentimientos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Gael -->
+    <section id="gael" class="profile-section gael-section">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <h2 class="section-title">¿Quién es Gael?</h2>
+                    <p class="profile-description">
+                        Un hombre de personalidad fuerte, resiliente, apasionado, completo, con profundidad en su pensar y un corazón 
+                        que guarda tesoros de lealtad y compromiso.
+                    </p>
+                </div>
+                <div class="profile-image">
+                    <img src="images/gael-profile.jpg" alt="Gael">
+                    <div class="profile-overlay"></div>
+                </div>
+            </div>
+
+            <div class="subsections-grid">
+                <!-- Mismos subsections que Andrea pero para Gael -->
+                <div class="subsection-card" onclick="openModal('gael-hobbies')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Hobbies</h3>
+                    <p>Sus pasatiempos y actividades favoritas</p>
+                </div>
+
+                <div class="subsection-card" onclick="openModal('gael-foda')">
+                    <div class="subsection-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análisis FODA</h3>
+                    <p>Fortalezas, oportunidades, debilidades y amenazas</p>
+                </div>
+
+                <!-- ... otros subsections igual que Andrea ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Recuerdos -->
+    <div class="drive-access">
+    <div class="drive-card">
+        <i class="fab fa-google-drive"></i>
+        <h3>Drive de Recuerdos</h3>
+        <p>Accede a todos nuestros momentos especiales guardados</p>
+        <a href="https://drive.google.com/drive/folders/1DG4_pAB--6vFmnT8pmEBbS1z8U1QaFN7?usp=sharing" class="drive-btn" target="_blank">
+            Abrir Drive
+        </a>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Botón de Perdón Flotante -->
+    <div class="forgiveness-floating">
+        <button class="forgiveness-btn" onclick="openModal('perdon')">
+            <i class="fas fa-heart-crack"></i>
+            ¿Por qué deberías perdonarme?
+        </button>
+    </div>
+
+    <!-- Modales -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Hecho con 💖 para Gael y Andrea</p>
+            <p>Nuestra historia continua...</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

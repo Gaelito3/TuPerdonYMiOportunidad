@@ -1,0 +1,38 @@
+/* Estilos específicos para la sección de Gael */
+.gael-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.gael-section .profile-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #2c3e50, #34495e, #7f8c8d);
+    border-radius: 25px;
+    z-index: -1;
+    animation: gradientShift 3s ease infinite;
+}
+
+.gael-section .subsection-card {
+    border-left: 4px solid var(--primary-blue);
+}
+
+.gael-section .subsection-icon {
+    color: var(--primary-blue);
+}
+
+.gael-section .subsection-card:hover {
+    background: linear-gradient(135deg, var(--white), #f8f9fa);
+}
+
+.gael-section .section-title {
+    color: var(--primary-blue);
+}
+
+/* Modal content styles for Gael */
+#gael-hobbies .modal-content {
+    border-left: 5px solid var(--primary-blue);
+}
